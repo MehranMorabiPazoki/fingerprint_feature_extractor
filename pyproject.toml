@@ -1,0 +1,31 @@
+[project]
+name = "Fingerprint-FeatureExtractor"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "None"}
+]
+package-mode = false
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "kagglehub (>=0.3.13,<0.4.0)",
+    "imageio (>=2.37.0,<3.0.0)",
+    "pandas (>=2.3.2,<3.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "scikit-image (>=0.25.2,<0.26.0)",
+    "scipy (>=1.16.1,<2.0.0)",
+    "opencv-python (>=4.12.0.88,<5.0.0.0)",
+    "fingerprint-feature-extractor (>=0.0.10,<0.0.11)",
+    "scikit-learn (>=1.7.1,<2.0.0)",
+    "fingerprint-enhancer (>=0.0.14,<0.0.15)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.30.1"
+
