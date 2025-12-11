@@ -153,25 +153,6 @@ Interpretations:
 | 3 |	Bifurcation |
 | else |	Not a minutia |
 
-## 2. Gabor Filtering
-
-Each pixel is enhanced using Gabor convolution aligned to the local orientation.
-
-Gabor kernel (ASCII approximation):
-
-```
-G(x, y) = exp( - ( x'^2 + gamma^2 * y'^2 ) / (2 * sigma^2) ) 
-          * cos( 2 * pi * frequency * x' )
-```
-
-Where:
-
-```
-x' =  x * cos(theta) + y * sin(theta)
-y' = -x * sin(theta) + y * cos(theta)
-```
-
----
 
 ----------------------------------------------------------
 # 🔍 1.4 Boundary Filtering
