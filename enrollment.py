@@ -19,13 +19,16 @@ def enroll_fingerprint(user_id, img, db_path='fingerprints.db'):
     conn.close()
     print(f"Enrolled {user_id} with {len(minutiae)} minutiae")
 
-# Enroll multiple images
-import glob
-socofing_files = glob.glob('dataset/archive/socofing/SOCOFing/Real/*.BMP')
-for i, file in enumerate(socofing_files[:10]):
-    
-    img = cv2.imread(file, cv2.IMREAD_GRAYSCALE)
-    if img is None:
-        raise ValueError(f"Failed to load image: {file}")
-    print(f"file{file}")
-    enroll_fingerprint(f'user{i+1}', img)
+
+
+if __name__ == "__main__":
+    # Enroll multiple images
+    import glob
+    socofing_files = glob.glob('dataset/archive/socofing/SOCOFing/Real/*.BMP')
+    for i, file in enumerate(socofing_files[:10]):
+        
+        img = cv2.imread(file, cv2.IMREAD_GRAYSCALE)
+        if img is None:
+            raise ValueError(f"Failed to load image: {file}")
+        print(f"file{file}")
+        enroll_fingerprint(f'user{i+1}', img)
