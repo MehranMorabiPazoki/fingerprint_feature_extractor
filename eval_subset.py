@@ -8,7 +8,7 @@ from feature_extractor import extract_minutiae
 from matcher import compute_confidence
 
 DB_PATH = "fingerprints.db"
-ALTERED_PATH = "SOKOTO/SOCOFing/Altered/Altered-Medium"
+ALTERED_PATH = "SOKOTO/socofing/SOCOFing/Altered/Altered-Easy"
 
 
 # ---------- Parser ----------

@@ -7,9 +7,9 @@ import os
 from feature_extractor import extract_minutiae
 
 DB_PATH = "fingerprints.db"
-DATASET_PATH = "SOKOTO/SOCOFing/Real"
-MAX_SUBJECTS = 20        # <<<<< CHANGE THIS
-MAX_FINGERS = 2          # <<<<< CHANGE THIS
+DATASET_PATH = "SOKOTO/socofing/SOCOFing/Real"
+MAX_SUBJECTS = 100        # <<<<< CHANGE THIS
+MAX_FINGERS = 1          # <<<<< CHANGE THIS
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
